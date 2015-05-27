@@ -1,0 +1,445 @@
+$linkColor: /*#5E759F*/#B939E9;
+$linkHover: #CBCBCB;
+$linkShadowNav: rgba(132,170,197,0.37);
+$linkActive: #EFEFEF;
+$linkVisited: #CDB5CD;
+$linkActiveShadow: rgba(167,84,222,0.66);
+$imgOpacity: 0.7;
+
+@charset "utf-8";
+/* CSS Document */
+
+/* Global
+================================ */
+* {
+	font-size: 14px;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 1000px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 2em;
+	min-height:100%;
+	position:relative;
+}
+
+
+
+/*VÄNSTER KOLUMN*/
+.leftCol{
+	width: 30%;
+	float: left;
+	padding: 1em 1em 1em 0;
+}
+
+/*CENTERKOLUMN*/
+.centerCol {
+	width: 30%;
+	float: left;
+	padding: 1em 1em 1em 0;
+}
+
+/*HÖGER KOLUMN*/
+.rightCol {
+	width: 30%;
+	float: left;
+	padding: 1em 1em 1em 0;
+}
+
+
+/*ENSAM KOLUMN*/
+.singleCol {
+	width: 100%;
+	margin-left: auto;
+	margin-right:auto;
+	position: relative;
+	padding: auto/*1em 5em 2em 7em*/;
+}
+
+	.singleCol h1 {
+		font-family: 'Poiret One', serif;
+		font-size: 44px;
+		font-weight: normal;
+	}
+	
+	.singleCol h2 {
+		font-family: 'Poiret One', serif	;
+		font-size: 24px;
+		font-weight: normal;
+	}
+	
+	.singleCol h3 {
+		font-family: 'Georgia', serif	;
+		font-size: 18px;
+		font-weight: normal;
+	}
+	
+	.singleCol img {
+		size:auto;
+	}
+
+
+	.singleCol ul li {
+		font-family: 'Poiret One', Serif;
+		font-size: 135%;
+		list-style-type: none;
+	}
+
+	.singleCol ul li a:link{
+		font-size: 135%;
+		color: $linkColor;
+		text-decoration: none;
+	}
+
+	.singleCol ul li a:hover{
+		font-weight: bold;
+		color: $linkHover;
+	}
+
+	.singleCol ul li a:visited{
+		color: $linkVisited;
+	}
+
+
+	.singleCol dl dt {
+		font-family: 'Poiret One', Serif;
+		font-size: 135%;
+		font-weight: bold;
+		padding-top: 2em;
+	}
+
+	.singleCol dl dt dd {
+		font-family: sans-serif;
+		font-size: 100%;
+		font-style: italic;
+	}
+
+
+/*FRAMSIDA*/
+	#start-cover img {
+		display: block;
+		margin-left: auto;
+    	margin-right: auto;
+    	opacity: 1.0;
+		max-width:100%;
+		max-height:100%;
+		box-shadow:10px 20px 20px rgba(180,174,174,0.82);
+		border-radius: 25px;
+	}
+
+	#start-cover img:hover {
+			opacity: 0.8;
+			/*border-radius:20px;*/
+			box-shadow:10px 15px 15px rgba(180,174,174,0.82);
+			position: relative;
+  			top: 3px;
+		}
+
+
+/*BODY*/
+body {
+	background: url(../pics/blue-bird.jpg) no-repeat;
+	background-color:#EAEFF3;
+	background-size: cover;
+	font-family: sans-serif;
+	font-size: 14px;
+
+	padding-bottom:50px;
+	
+	//margin: 0 0 50px; /*footer fix*/
+}
+
+
+/*NAVBAR*/
+
+.navbar {
+	margin: 0;
+	white-space: nowrap;
+}
+.navbar ul li {
+	float: left;
+	margin-right: 5px;
+	padding: 1px 5px 1px 5px;
+	list-style-type: none;
+	font-family: 'Poiret One', sans-serif;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+
+.logo {
+	width: 65%;
+	height: 65%;
+	
+}
+
+/*FOOTER*/
+.footer {
+	/*clear: both;*/
+	width:100%;
+	height:50px;
+	position:auto;
+	bottom:0;
+	left:0;
+	/*margin: 1em 0 0 0;*/
+	overflow: hidden;
+	float: left;
+}
+
+.footer p{
+	font-size: 80%;
+	padding: 1em 0 0 5em;
+}
+
+.footer p a:link {
+	font-size: 100%;
+	text-decoration: none;
+	color: $linkColor;
+}
+
+.footer p a:hover {
+	color: $linkHover;
+}
+
+.footer p a:visited {
+	color: $linkVisited;
+}
+
+.navbar ul li a {
+	color: $linkColor;
+	text-decoration:none;
+	font-weight: 100%;
+	text-shadow:-2px 1px $linkShadowNav; 
+	font-size: 120%;
+}
+
+
+.navbar ul li a:hover {
+	color: $linkHover;
+}
+
+
+
+.navbar .active {
+	color: $linkActive;
+	text-shadow: -2px 1px $linkActiveShadow;
+}
+
+.justifyMe {
+	text-align:justify;
+}
+
+.justifyMe img {
+	float: left; 
+	padding-right: 2em;
+}
+
+.justifyMe a:link {
+	text-decoration: none;
+}
+
+.leftCol img{
+	opacity: $imgOpacity;
+	max-width:100%;
+	max-height:100%;
+	box-shadow:10px 15px 15px rgba(180,174,174,0.82);
+}
+
+.centerCol img{
+	opacity: $imgOpacity;
+	max-width:100%;
+	max-height:100%;
+	box-shadow:10px 15px 15px rgba(180,174,174,0.82);
+}
+
+.rightCol img{
+	opacity: $imgOpacity;
+	max-width:100%;
+	max-height:100%;
+	box-shadow:10px 15px 15px rgba(180,174,174,0.82);
+}
+
+
+/*Click-effekt galleri*/  
+.rightCol img:hover {
+			opacity: 1.0;
+			position: relative;
+  			top: 1.5px;
+		}
+
+.centerCol img:hover {
+			opacity: 1.0;
+			position: relative;
+  			top: 1.5px;
+		}
+
+.leftCol img:hover {
+			opacity: 1.0;
+			position: relative;
+  			top: 1.5px;
+		}
+		
+	/* Clearfix
+	================================ */
+
+	.group:after,
+	.wrapper:after {
+	  content: " ";
+	  display: table;
+	  clear: both;
+	}
+
+
+@media (max-width: 1300px) {
+	body {
+		background-image:none;
+		background-color:#EAEFF3;
+	}
+	
+	.singleCol {
+		width: auto;
+		padding: 10px;
+	}
+	
+	  .navbar {
+	margin: 0;
+	white-space: nowrap;
+	}
+
+	.navbar ul li {
+	float: left;
+	margin-right: 5px;
+	padding: 1px 5px 1px 5px;
+	list-style-type: none;
+}
+  
+  .leftCol, .centerCol, .rightCol {
+	  float: none;
+	  width: 100%;
+  }
+  
+/*  .singleCol {
+	width: 100%;
+	margin-left: auto;
+	margin-right:auto;
+	position: relative;
+	padding: 1em 5em 2em 7em;
+}*/
+  
+.footer {
+	width:100%;
+	height:50px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	float: left;
+ }
+
+ #footer-link{
+	font-size: 80%;
+	text-decoration: none;
+}
+
+}
+
+
+/*MOBIL*/
+@media only screen  
+and (min-device-width : 320px)
+and (max-device-width : 480px){
+	.wrapper  {
+		max-width: 480px;
+	}
+  
+  .navbar {
+	margin: 0;
+	white-space: nowrap;
+	}
+
+	.navbar ul li {
+	float: left;
+	margin-right: 5px;
+	padding: 1px 5px 1px 5px;
+	list-style-type: none;
+}
+  
+  .leftCol, .centerCol, .rightCol {
+	  float: none;
+	  width: 100%;
+  }
+  
+  
+  .singleCol {
+	width: auto;
+	padding: 5px;
+	}
+	
+	.singleCol p img {
+		width: 100%;
+	}
+	
+	
+
+  
+ .footer {
+	position: auto;
+	
+ }
+ 
+
+  
+}
+
+/*IPAD mini*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) { 
+
+		.wrapper  {
+		max-width: 750px; 
+	}
+  
+  .navbar {
+	margin: 0;
+	white-space: nowrap;
+}
+.navbar ul li {
+	float: left;
+	margin-right: 5px;
+	padding: 1px 5px 1px 5px;
+	list-style-type: none;
+}
+  
+  .leftCol, .centerCol, .rightCol, {
+	  float: none;
+	  width: 100%;
+  }
+  
+  .singleCol {
+	width: auto;
+	padding: 5px;
+	}
+	
+	.singleCol p img {
+		width: 100%;
+	}
+
+	.justifyMe img {
+	float: left; 
+	img-size: 50%;
+	padding-right: 2em;
+}
+	 
+ .footer{
+		position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    height: 100px;
+	    width: 100%;
+ }
+}
+
+
+		
